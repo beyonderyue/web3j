@@ -20,6 +20,9 @@ web3j: Web3 Java Ethereum Ðapp API
    :target: https://community.web3labs.com
    :alt: Join the chat at https://gitter.im/web3j/web3j
 
+Q3 2020 Web3j user survey! Please fill it out `here <https://forms.gle/G4PNL7jMGAMpuYxo6>`_
+----------------------------------------------------------------------------------------
+
 web3j is a lightweight, highly modular, reactive, type safe Java and Android library for working with
 Smart Contracts and integrating with clients (nodes) on the Ethereum network:
 
@@ -95,13 +98,13 @@ Commercial support and training is available from `web3labs.com <https://www.web
 Quickstart
 ----------
 
-Install the Web3j binary.
+Install the Epirus binary.
 
 To get the latest version on Mac OS or Linux, type the following in your terminal:
 
 .. code-block:: bash
 
-   curl -L https://get.web3j.io | sh
+   curl -L https://get.epirus.io | sh
 
 Then follow the on-screen instructions or head `here <https://docs.web3j.io/quickstart/>`_. 
 
@@ -120,7 +123,7 @@ demonstrates a number of core features of Ethereum with web3j, including:
 Getting started
 ---------------
 
-Typically your application should depend on release versions of web3j, but you may also use snapshot dependencies
+Typically your application should depend on release versions of Web3j, but you may also use snapshot dependencies
 for early access to features and fixes, refer to the  `Snapshot Dependencies`_ section.
 
 | Add the relevant dependency to your project:
@@ -135,7 +138,7 @@ Java 8:
    <dependency>
      <groupId>org.web3j</groupId>
      <artifactId>core</artifactId>
-     <version>4.5.12</version>
+     <version>4.6.3</version>
    </dependency>
 
 Android:
@@ -145,7 +148,7 @@ Android:
    <dependency>
      <groupId>org.web3j</groupId>
      <artifactId>core</artifactId>
-     <version>4.2.0-android</version>
+     <version>4.6.0-android</version>
    </dependency>
 
 
@@ -156,13 +159,13 @@ Java 8:
 
 .. code-block:: groovy
 
-   compile ('org.web3j:core:4.5.12')
+   compile ('org.web3j:core:4.6.3')
 
 Android:
 
 .. code-block:: groovy
 
-   compile ('org.web3j:core:4.2.0-android')
+   compile ('org.web3j:core:4.6.0-android')
 
 Plugins
 -------
@@ -176,6 +179,8 @@ and `web3j-maven-plugin <https://github.com/web3j/web3j-maven-plugin>`_ for deta
 
 Start a client
 --------------
+
+If you sign up to the [Epirus Platform](https://www.web3labs.com/epirus), you do not need to run your own client. However, if you'd like to run your own read on.
 
 Start up an Ethereum client if you don't already have one running.
 
@@ -191,8 +196,6 @@ Start up an Ethereum client if you don't already have one running.
 .. code-block:: bash
 
    $ besu ----network=dev
-
-
 
 `dev` network uses has `some handy default parameters <https://besu.hyperledger.org/en/stable/Reference/Accounts-for-Testing/#development-mode>`_.
 
@@ -536,7 +539,7 @@ For a .NET implementation, check out `Nethereum <https://github.com/Nethereum/Ne
 
 For a pure Java implementation of an Ethereum client, check out
 `Besu <https://github.com/hyperledger/besu>`_. Note: both `EthereumJ <https://github.com/ethereum/ethereumj>`_ and
-`Ethereum Harmony <https://github.com/ether-camp/ethereum-harmony>`_ have been depracated and should not be used in production.
+`Ethereum Harmony <https://github.com/ether-camp/ethereum-harmony>`_ have been deprecated and should not be used in production.
 
 
 Projects using web3j
@@ -545,6 +548,7 @@ Projects using web3j
 Please submit a pull request if you wish to include your project on the list:
 
 - `AlphaWallet Android Wallet <https://github.com/AlphaWallet/alpha-wallet-android.git>`_
+- `Minerva Digital Wallet <https://github.com/lab10-coop/minerva-android-v2>`_
 - `ERC-20 RESTful Service <https://github.com/blk-io/erc20-rest-service>`_
 - `Ether Wallet <https://play.google.com/store/apps/details?id=org.vikulin.etherwallet>`_ by
   `@vikulin <https://github.com/vikulin>`_
@@ -580,7 +584,10 @@ Please submit a pull request if you wish to include your company on the list:
 - `Impetus <http://www.impetus.com/>`_
 - `Argent Labs <http://www.argent.im/>`_
 - `AlphaWallet <https://www.alphawallet.com/>`_
+- `Lab10 collective <https://lab10.coop/>`_
+- `BinarApps <https://binarapps.com/>`_
 - `PegaSys <https://pegasys.tech/>`_
+- `Arkane <https://arkane.network/>`_
 
 
 Build instructions
@@ -645,5 +652,5 @@ Thanks and credits
 - `Othera <https://www.othera.com.au/>`_ for the great things they are building on the platform
 - `Finhaus <http://finhaus.com.au/>`_ guys for putting me onto Nethereum
 - `bitcoinj <https://bitcoinj.github.io/>`_ for the reference Elliptic Curve crypto implementation
-- Everyone involved in the Ethererum project and its surrounding ecosystem
+- Everyone involved in the Ethereum project and its surrounding ecosystem
 - And of course the users of the library, who've provided valuable input & feedback
